@@ -35,6 +35,10 @@ Simple greeting and calculator gRPC Unary API.
 
 [calculator: gRPC Unary README.md](./calculator/README.md)
 
-### greet(GreetManyTimes) and calculator(DecomposeIntoPrime): gRPC Server Streaming API
+### greet(GreetManyTimes) and calculator(Primes): gRPC Server Streaming API
 
-The GreetService and CalculatorService are modified by adding function calls that return streams.
+The GreetService and CalculatorService are modified by adding function calls that support streams on the server.
+
+### greet(LongGreet) and calculator(DecomposeIntoPrime): gRPC Client Streaming API
+
+The GreetService and CalculatorService are modified by adding function calls that support streams on the client.

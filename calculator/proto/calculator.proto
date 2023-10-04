@@ -5,23 +5,28 @@ package sum;
 option go_package = "github.com/MartinLupa/gRPC/calculator/proto";
 
 message SumRequest {
-    int32 num1 = 1;
-    int32 num2 = 2;
+    int64 num1 = 1;
+    int64 num2 = 2;
 }
 
-message SumResponse {
-    int32 result = 1;
-}
-
-message PrimeRequest {
+message NumRequest {
     int64 num = 1;
+}
+
+message NumResponse {
+    int64 result = 1;
 }
 
 message PrimeResponse {
     int64 result = 1;
 }
 
+message AvgResponse {
+    double result = 1;
+}
+
 service CalculatorService {
-    rpc Sum (SumRequest) returns (SumResponse);
-    rpc Primes(PrimeRequest) returns (stream PrimeResponse);
+    rpc Sum (SumRequest) returns (NumResponse);
+    rpc Primes(NumRequest) returns (stream PrimeResponse);
+    rpc Avg (stream NumRequest) returns (AvgResponse);
 }

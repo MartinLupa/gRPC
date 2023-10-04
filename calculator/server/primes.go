@@ -6,7 +6,7 @@ import (
 	pb "github.com/MartinLupa/gRPC/calculator/proto"
 )
 
-func (s *Server) Primes(in *pb.PrimeRequest, stream pb.CalculatorService_PrimesServer) error {
+func (s *Server) Primes(in *pb.NumRequest, stream pb.CalculatorService_PrimesServer) error {
 	log.Printf("Primes function was invoked with %v\n", in)
 
 	number := in.Num

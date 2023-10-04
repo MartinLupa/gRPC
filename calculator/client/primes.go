@@ -11,7 +11,7 @@ import (
 func doPrimes(c pb.CalculatorServiceClient) {
 	log.Println("doPrimes was invoked")
 
-	req := &pb.PrimeRequest{
+	req := &pb.NumRequest{
 		Num: 12390392840,
 	}
 
