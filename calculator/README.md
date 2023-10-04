@@ -1,4 +1,3 @@
-
 ## Testing server and client
 
 - run ```make <project_name>```

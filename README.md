@@ -27,9 +27,11 @@ Explanation of command flags:
 
 Check the README.md file inside each project to learn how to use it.
 
-### greet: gRPC Unary
+### greet and calculator: gRPC Unary
 
-Simple greeting gRPC Unary API.
+Simple greeting and calculator gRPC Unary API.
 
 [greet: gRPC Unary README.md](./greet/README.md)
+
+[calculator: gRPC Unary README.md](./calculator/README.md)
 
