@@ -27,7 +27,7 @@ Explanation of command flags:
 
 Check the README.md file inside each project to learn how to use it.
 
-### greet and calculator: gRPC Unary
+### greet(Greet) and calculator(Sum): gRPC Unary API
 
 Simple greeting and calculator gRPC Unary API.
 
@@ -35,3 +35,6 @@ Simple greeting and calculator gRPC Unary API.
 
 [calculator: gRPC Unary README.md](./calculator/README.md)
 
+### greet(GreetManyTimes) and calculator(DecomposeIntoPrime): gRPC Server Streaming API
+
+The GreetService and CalculatorService are modified by adding function calls that return streams.
