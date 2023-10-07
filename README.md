@@ -52,3 +52,29 @@ The GreetService and CalculatorService are modified by adding function calls tha
 
 The GreetService and CalculatorService are modified by adding function calls that support streams on the client.
 
+## Other features
+
+- GreetWithDeadline: includes waiting timeouts for responses.
+- Greet server/client: SSL Security.
+- Reflection & Evans CLI: to visualize services and endpoints. 
+
+### Running evans CLI (visualize and test packages, services, messages, and endpoints): 
+- Install evans CLI from https://github.com/ktr0731/evans
+- ```evans --host localhost --port 50051 --reflection repl```
+
+```show package```
+
+<img src="image-1.png" alt="show package screenshot" width="200"/>
+
+```show message```
+
+<img src="image-2.png" alt="show message screenshot" width="200"/>
+
+```package calculator & show service```
+
+<img src="image-3.png" alt="show service screenshot" width="400"/>
+
+```call Sum (testing Sum endpoint)```
+
+<img src="image-4.png" alt="call Sum endpoint screenshot" width="400"/>
+
