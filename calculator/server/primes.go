@@ -14,7 +14,7 @@ func (s *Server) Primes(in *pb.NumRequest, stream pb.CalculatorService_PrimesSer
 
 	for number > 1 {
 		if number%divisor == 0 {
-			stream.Send(&pb.PrimeResponse{
+			stream.Send(&pb.NumResponse{
 				Result: divisor,
 			})
 			number /= divisor

@@ -39,6 +39,12 @@ Simple greeting and calculator gRPC Unary API.
 
 The GreetService and CalculatorService are modified by adding function calls that support streams on the server.
 
-### greet(LongGreet) and calculator(DecomposeIntoPrime): gRPC Client Streaming API
+### greet(LongGreet) and calculator(Avg): gRPC Client Streaming API
 
 The GreetService and CalculatorService are modified by adding function calls that support streams on the client.
+
+
+### greet(GreetEveryone) and calculator(Max): gRPC Bi-Directional Streaming API
+
+The GreetService and CalculatorService are modified by adding function calls that support streams on the client.
+
