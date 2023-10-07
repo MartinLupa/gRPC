@@ -1,7 +1,7 @@
 # gRPC 
 ----
-## Protocol Buffer commands
 
+## How to use
 ### Manual Code Generation
 ```protoc -Igreet/proto --go_out=. --go_opt=module=github.com/MartinLupa/gRPC --go-grpc_out=. --go-grpc_opt=module=github.com/MartinLupa/gRPC greet/proto/dummy.proto```
 
@@ -18,9 +18,13 @@ Explanation of command flags:
 ### Code Generation with Makefile
 
 - ```make <project_name>```: to generate the code out of the .proto file.
-
 - ```make help```: to see all available options.
 
+
+### Running client and server
+
+- open one terminal and run ```./bin/<project_name>/server```
+- open a second terminal and run ```./bin/<project_name>/client```
 
 
 ## Projects
